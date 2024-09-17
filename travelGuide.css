@@ -1,0 +1,264 @@
+/* Reset */
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    color: white;
+    
+}
+
+/* Header and Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(13,31,32,1) 42%, rgba(113,124,124,1) 100%);
+}
+
+nav {
+    width: 79rem;
+    height: 4rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* Search Box */
+#searchBox {
+    position: relative;
+    width: 430px;
+    margin-bottom: 0;
+}
+
+#searchBtn,
+#clearBtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    
+}
+
+#searchBtn {
+    right: 65px;
+}
+#clearBtn {
+    right: 1px;
+}
+
+button.searchBtn {
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    height: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button.clearBtn {
+    padding: 5px;
+    margin-top: 7px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    height: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchBox input[type="text"] {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: black;
+    width: 100%;
+}
+
+/* Socials */
+#socials {
+    width: 10%;
+    text-align: center;
+}
+
+#socials > svg {
+    margin-left: 10px;
+}
+
+#socials ul {
+    list-style: none;
+}
+
+svg.socialIcon {
+    width: 26px;
+    padding: 15px 0px;
+    height: auto;
+}
+
+/* Main Body */
+main {
+    background-image: url("./images/battery_park.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin: 0; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+#container {
+    max-width: 1000px;
+    margin-right: 50px;
+}
+
+#results {
+    width: 500px;
+    background-color: rgba(108, 122, 137, 0.85);
+    visibility: hidden; 
+    /* initially set here and overwritten with js - stops load jitter */
+}
+
+#results > div {
+    margin: 20px 0;
+}
+
+#results > div > h2, 
+#results > div > p {
+    margin: 10px;
+}
+
+#results > div > button {
+    margin: 0 10px;
+}
+
+h1.hero-text {
+    font-size: 3em;
+    padding-top: 130px;
+}
+
+p.promo-blurb {
+    max-width: 330px;
+    padding: 40px 0;
+}
+
+/* Search/Form Elements */
+label,
+#form-submit {
+   display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="textarea"],
+select {
+    width: 200px;
+    padding: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 0.6rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* About Us */
+#about-us-blurb {
+    margin-top: 50px;
+}
+
+#our-team-box {
+    display: flex;
+    margin: 50px 0 0 30px;
+}
+
+.our-team-card {
+    width: 270px;
+    margin: 0 24px;
+}
+
+.person-icon {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+
+.job-description {
+    background-color: green;
+    border-radius: 5px;
+    border: 1px solid lightslategray;
+    text-align: center;
+    padding: 4px;
+}
+
+/* Contact Us */
+#contact-us-form {
+    max-width: 400px;
+    height: fit-content;
+    margin: 23px;
+    padding: 15px;
+    background: rgba(108, 122, 137, 0.85);
+    border-radius: 3px;
+}
+
+#contact-us-form > div {
+    margin: 20px 0;
+}
+
+#contact-us-form > div > input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+#contact-us-form > div > label {
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+#contact-us-form > div > textarea {
+    padding: 7px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#contact-us-form > div > button {
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-us-form input[type="text"],
+#contact-us-form input[type="email"],
+#contact-us-form textarea {
+    color: black;
+    opacity: .7;
+}
